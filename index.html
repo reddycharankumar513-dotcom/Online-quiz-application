@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizFlow Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <span class="corner-mark">◈</span>
+
+    <div class="stage">
+        <div class="card">
+            <div class="card-header">
+                <div class="header-label">Assessment Platform</div>
+                <div class="header-title">QuizFlow</div>
+                <div class="header-subtitle">Enter your credentials to continue</div>
+                <div class="header-deco">Q</div>
+            </div>
+            <div class="card-body">
+                <div class="input-group">
+                    <label>Username</label>
+                    <input type="text" id="username" placeholder="Enter username" />
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="Enter password" />
+                </div>
+                <button class="btn btn-primary" onclick="login()" style="margin-top:8px;">
+                    ↳ Sign In
+                </button>
+
+                <div class="cred-box">
+                    <p>
+                        <strong>Admin</strong> → admin / admin123<br>
+                        <strong>User &nbsp;</strong> → user / user123
+                    </p>
+                </div>
+
+                <div class="practice-link-card">
+                    <p>Want to practice without logging in?</p>
+                    <button class="btn btn-practice" onclick="window.location.href='practice.html'">
+                        ✦ Self Practice Mode
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
